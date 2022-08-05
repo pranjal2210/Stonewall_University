@@ -1,0 +1,524 @@
+@media screen and (max-width: 1024px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  section h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  nav {
+    height: 5rem;
+  }
+
+  .nav-container img {
+    height: 3rem;
+  }
+
+  .nav-menu {
+    gap: 2rem;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .categories {
+    height: 16rem;
+  }
+
+  .categories-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .categories-left h4 {
+    font-size: 1rem;
+  }
+
+  .categories-left p {
+    font-size: .8rem;
+    margin: 1rem 0 2rem;
+  }
+
+  .categories-right {
+    gap: .3rem;
+  }
+
+  .category img {
+    height: 3rem;
+    width: 4rem;
+  }
+
+  .category h5 {
+    font-size: .8rem;
+  }
+
+  .courses-container {
+    gap: .75rem;
+  }
+
+  .course-info {
+    padding: .75rem;
+  }
+
+  .course-info h4 {
+    font-size: 1rem;
+  }
+
+  .course-info p {
+    margin: 1rem 0 1rem;
+    font-size: .8rem;
+  }
+
+  .footer {
+    padding-top: 3rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.1fr 1.1fr 2fr;
+    gap: .75rem;
+  }
+
+  .footer img {
+    width: 8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-container div h4 {
+    font-size: 1rem;
+  }
+
+  .aside-img img {
+    width: 8rem;
+  }
+
+  .contact-details li {
+    gap: .5rem;
+    margin-bottom: .75rem;
+  }
+
+  .contact-socials {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  nav button#closeMenuBtn {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 5rem;
+    right: 7.5%;
+    height: fit-content;
+    flex-direction: column;
+    width: 12rem;
+    gap: 0;
+    display: none;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    height: 4rem;
+    animation: animateNavItem .2s linear forwards;
+    transform-origin: top right;
+    opacity: 0;
+  }
+
+  .nav-menu li:nth-child(2) {
+    animation-delay: .2s;
+  }
+
+  .nav-menu li:nth-child(3) {
+    animation-delay: .3s;
+  }
+
+  .nav-menu li:nth-child(4) {
+    animation-delay: .4s;
+  }
+
+  @keyframes animateNavItem {
+    0% {
+      transform: rotateZ(-90deg) rotateX(90deg) scale(.1);
+    }
+
+    100% {
+      transform: rotateZ(0deg) rotateX(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+
+  .nav-menu li a {
+    background: var(--color-primary);
+    box-shadow: -2rem 4rem 6rem rgba(0, 0, 0, .5);
+    width: 100%;
+    color: white;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-menu li a:hover {
+    background: var(--color-bg2);
+    color: white;
+  }
+
+  .header-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .categories-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .categories-right {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categories {
+    height: 22rem;
+  }
+
+  .categories-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .categories-left p {
+    margin: 1rem 0 1rem;
+  }
+
+  .category {
+    height: auto;
+    width: 10rem;
+  }
+
+  .categories-left {
+    margin-right: 0;
+  }
+
+  .categories-left .btn {
+    margin-bottom: 1.5rem;
+  }
+
+  .category img {
+    height: 2rem;
+    width: 3rem;
+  }
+
+  .category h5 {
+    font-size: .6rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  .courses-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .vision-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vision-left img {
+    height: 10rem;
+  }
+
+  .award-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .award-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    height: 48rem;
+    gap: 0;
+  }
+
+  .contact-aside {
+    padding: 1rem 2rem;
+    bottom: 6rem;
+  }
+
+  .contact-form {
+    gap: .5rem;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  header {
+    height: 80vh;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    gap: .1rem;
+  }
+
+  .header-left h1 {
+    font-size: 1.7rem;
+  }
+
+  .header-left p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  .header-left .btn {
+    margin-bottom: .5rem;
+  }
+
+  .categories-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .categories {
+    background: var(--color-bg1);
+    height: 32rem;
+  }
+
+  .category {
+    padding: .5rem;
+    width: auto;
+  }
+
+  .category h5 {
+    font-size: .5rem;
+  }
+
+  .category h5 {
+    font-size: .7rem;
+  }
+
+  .category img {
+    height: 2.5rem;
+    width: 3.5rem;
+  }
+
+  .faqs-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    outline: .5rem solid var(--color-bg1);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-1 {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+  }
+
+  .footer-1 p {
+    margin: 0;
+    font-size: .8rem;
+  }
+
+  .footer img {
+    margin-top: 1rem;
+  }
+
+  .footer-1 p {
+    margin: 0;
+    font-size: .8rem;
+  }
+
+  .q-links,
+  .primacy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .courses {
+    margin-top: 2rem;
+  }
+
+  footer ul li {
+    margin-bottom: .75rem;
+  }
+
+  .footer-container div h4 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-4 i {
+    margin-bottom: 1rem;
+  }
+
+  .footer-copy {
+    margin-top: 0rem;
+  }
+
+  section.about-intro {
+    padding: 0rem 0 1rem;
+  }
+
+  .intro-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .intro-container p {
+    font-size: .9rem;
+  }
+
+  .vision-right h4 {
+    font-size: 1.3rem;
+  }
+
+  .vision-right p {
+    font-size: .9rem;
+  }
+
+  .award-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .award-para {
+    font-size: .9rem;
+  }
+
+  .award-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .3rem;
+  }
+
+  .award-card {
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .award-icon {
+    font-size: 1.5rem;
+  }
+
+  .award-card h3 {
+    font-size: 1rem;
+  }
+
+  .award-card p {
+    font-size: .8rem;
+  }
+
+  .team-container {
+    gap: .3rem;
+  }
+
+  .tutor {
+    padding: .5rem;
+  }
+
+  .tutor-info h4 {
+    font-size: 1rem;
+  }
+
+  .tutor-info p {
+    font-size: .75rem;
+  }
+
+  section.contact{
+    padding-bottom: 0;
+  }
+
+  .contact-aside {
+    padding: 1rem;
+    bottom: 6rem;
+  }
+
+  .contact-aside p {
+    font-size: .9rem;
+  }
+
+  .aside-img img {
+    width: 10rem;
+  }
+
+  .contact-container{
+    height: 46rem;
+  }
+
+  .contact-socials {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .contact-form {
+    margin-top: -4rem;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+}
+}

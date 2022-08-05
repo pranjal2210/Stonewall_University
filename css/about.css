@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root{
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-varient: rgba(247,88,66,0.4);
+  --color-white: #fff;
+  --color-light: rgba(255,255,255,0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --containerWidth-sm: 75%;
+  --containerWidth-md: 80%;
+  --containerWidth-lg: 85%;
+
+  --transition: all .3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--color-bg2);
+  border-radius: 2rem;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Rampart One', cursive; */
+  line-height: 1.5;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+
+.container{
+  width: var(--containerWidth-lg);
+  margin: 0 auto;
+}
+
+section{
+  padding: 4rem 0;
+}
+
+section h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1,h2,h3,h4,h5{
+  line-height: 1.2;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+
+h4{
+  font-size: 1.4rem;
+}
+
+h5{
+  font-size: 1.2rem;
+}
+
+a{
+  color: var(--color-white);
+}
+
+img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn{
+  display: inline-block;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: .5rem 1rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: .4rem;
+}
+
+.btn:hover{
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.btn-primary{
+  background: var(--color-danger);
+  color: var(--color-white);
+}
+
+/* NAVBAR */
+
+nav{
+  background: transparent;
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+}
+
+.nav-container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container img{
+  height: 4rem;
+  transition: var(--transition);
+}
+
+.nav-container img:hover{
+  transform: scale(1.03);
+}
+
+nav button{
+  display: none;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-menu a{
+  font-size: 1.2rem;
+  transition: var(--transition);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.nav-menu a:hover{
+  color: var(--color-bg2);
+}
+
+.window-scroll{
+  background: var(--color-primary);
+  box-shadow: 0 1rem 1.5rem rgba(0,0,0,0.5);
+  transition: var(--transition);
+}
+
+/* INTRO */
+
+section.about-intro{
+  padding: 1rem 0 3rem;
+}
+
+.intro-container{
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.intro-container h2{
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d0cdff;
+}
+
+.intro-container p{
+  margin-top: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about-vision{
+  background-color: var(--color-bg1);
+}
+
+.vision-container{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+}
+
+.vision-right h4{
+  margin-bottom: .5rem;
+}
+
+.vision-right p{
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* AWARDS */
+
+.award-container{
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 3rem;
+}
+
+.award-right{
+  margin: .5rem 0 1rem;
+}
+
+.award-para{
+  margin-bottom: 2rem;
+}
+
+.award-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+}
+
+.award-card{
+  background: var(--color-bg1);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.award-card:hover{
+  background: var(--color-bg2);
+  box-shadow: 0 1rem 4rem rgba(0,0,0,0.5);
+}
+
+.award-icon{
+  font-size: 1.75rem;
+}
+
+.award-icon i{
+  margin-bottom: 1rem;
+}
+
+.award-card p{
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.award-card:hover{
+  transform: scale(1.05);
+}
+
+/* TEAM */
+
+.team{
+  background: var(--color-bg1);
+  box-shadow: inset 0 0 4rem rgba(0,0,0,0.5);
+}
+
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.tutor{
+  background: var(--color-bg2);
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: .5rem;
+  transition: var(--transition);
+  overflow: hidden;
+  position: relative;
+}
+
+.tutor:hover{
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.tutor-image img{
+  filter: saturate(0);
+  border-radius: .5rem;
+  transition: var(--transition);
+}
+
+.tutor:hover .tutor-image img{
+  filter: saturate(1);
+}
+
+.tutor-info{
+  text-align: center;
+}
+
+.tutor-info h4{
+  margin: .5rem 0 0rem;
+}
+
+.tutor-info p{
+  color: var(--color-light);
+}
+
+.tutor-socials{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-primary);
+  border-radius: .5rem 0 0 .5rem;
+  text-align: center;
+  box-shadow: -.5rem 0 8px rgba(0,0,0,0.5);
+  transition: var(--transition);
+}
+
+.tutor-socials a{
+  padding: .5rem;
+}
+
+.tutor-socials a i{
+  font-size: 1.3rem;
+}
+
+.tutor-socials a i:hover{
+  color: var(--color-bg2);
+}
+
+.tutor:hover .tutor-socials{
+  right: 0;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+  background: var(--color-bg1);
+  padding-top: 4rem;
+  font-size: .9rem;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: .9fr .75fr .75fr 1fr;
+  gap: 2rem;
+}
+
+.footer-container div h4{
+  margin-bottom: 1.5rem;
+}
+
+.footer img{
+  width: 11rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-1 p{
+  margin: 1rem 0 2rem;
+  font-size: .8rem;
+}
+
+footer ul li{
+  margin-bottom: 1rem;
+}
+
+.footer-4 i{
+  margin-right: .75rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-socials{
+  display: flex;
+}
+
+.footer-socials a{
+  margin-right: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-copy{
+  text-align: center;
+  margin-top: 1rem;
+  padding: .5rem 0;
+  border-top: 2px solid var(--color-bg2);
+}
+
+.q-links a:hover, .primacy a:hover{
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.footer-socials a:hover{
+  color: var(--color-primary);
+}
